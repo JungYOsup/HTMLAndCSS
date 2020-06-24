@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  text-transform: capitalize;
+  font-size: 80%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  color: #777;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+main img {
+  opacity: 0.5;
+}
+
+main a:hover img {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+/* layout */
+
+.l_row {
+  width: auto;
+}
+.l_col {
+  float: left;
+  width: 10%;
+  padding: 5px;
+}
+
+.l_title {
+  width: 20%;
+  float: left;
+  padding: 20px 10px;
+}
+.l_grid {
+  float: left;
+  width: 80%;
+}
+
+/* components */
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.upper {
+  background-image: url("/assets//images/practice/household/header-cover.png");
+  height: 500px;
+  /* 이걸 vh로 잡아보니 ipad같은 높이가 긴거에서도 60%가 잡혀버리니까 조금 이상해지는것 같다
+    따라서 그냥 고정값을 주자 */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 30px 0 0 0;
+}
+
+.upper-img {
+  height: 100%;
+}
+
+.upper-box {
+  padding: 30px 0 0 0;
+}
+
+.item {
+  position: relative;
+  height: 80px;
+}
+
+.box-title {
+  position: absolute;
+}
+
+/* 여기서 item에게 padding을 주는게 맞는걸까?? 이거 수정이 필요할것 같은 느낌이 든다.*/
+
+.box-inform {
+  padding: 10px;
+}
+
+.box-inform h1 {
+  padding: 30px 0;
+}
+
+.sort {
+  padding: 10px;
+}
+
+.item2 {
+  position: relative;
+}
+.item2 .sort-img {
+  height: 70px;
+}
+
+.item2 .sort-title {
+  position: absolute;
+}
+
+.contents {
+  padding: 50px 10px;
+}
+
+.item3 {
+  position: relative;
+}
+
+.item3 .grid-title {
+  position: absolute;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.lower {
+  padding: 0 10px 40px 10px;
+}
+.additional {
+  float: left;
+  margin-right: 20px;
+}
+.additional h2 {
+  margin: 10px 0px;
+}
+
+.additional a {
+  color: #777;
+}
+
+/* 이미지는 텍스트이기때문에 다른요소가 absolute를 잡았을때 relative 역할을 못하나보다 */
+
+/* commons */
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.textmiddle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* 가운데 정렬 완성.. 이게 의미하는게 뭔지 알아보자 */
+}
+
+.border_white {
+  border: 1px solid white;
+}
+
+/* utility */
+
+.l_col_10_10 {
+  width: 100%;
+}
+.l_col_9_10 {
+  width: 90%;
+}
+.l_col_8_10 {
+  width: 80%;
+}
+.l_col_7_10 {
+  width: 70%;
+}
+.l_col_6_10 {
+  width: 60%;
+}
+.l_col_5_10 {
+  width: 50%;
+}
+.l_col_4_10 {
+  width: 40%;
+}
+.l_col_3_10 {
+  width: 30%;
+}
+.l_col_2_10 {
+  width: 20%;
+}
+.l_col_1_10 {
+  width: 10%;
+}
+
+.l_col_12_12 {
+  width: 100%;
+}
+.l_col_11_12 {
+  width: 91.66666667%;
+}
+.l_col_10_12 {
+  width: 83.33333333%;
+}
+.l_col_9_12 {
+  width: 75%;
+}
+.l_col_8_12 {
+  width: 66.66666667%;
+}
+.l_col_7_12 {
+  width: 58.33333333%;
+}
+.l_col_6_12 {
+  width: 50%;
+}
+.l_col_5_12 {
+  width: 41.66666667%;
+}
+.l_col_4_12 {
+  width: 33.33333333%;
+}
+.l_col_3_12 {
+  width: 25%;
+}
+.l_col_2_12 {
+  width: 16.66666667%;
+}
+.l_col_1_12 {
+  width: 8.33333333%;
+}
+
+/* mediaqueries  */
+
+/* laptop */
+
+/* tablet */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 60%;
+  }
+  .l_title {
+    width: auto;
+  }
+  .l_grid {
+    width: auto;
+  }
+}
+/* mobile */
+@media screen and (max-width: 430px) {
+  body {
+    font-size: 55%;
+  }
+
+  .l_col_12_mb_12 {
+    width: 100%;
+  }
+  .l_col_11_mb_12 {
+    width: 91.66666667%;
+  }
+  .l_col_10_mb_12 {
+    width: 83.33333333%;
+  }
+  .l_col_9_mb_12 {
+    width: 75%;
+  }
+  .l_col_8_mb_12 {
+    width: 66.66666667%;
+  }
+  .l_col_7_mb_12 {
+    width: 58.33333333%;
+  }
+  .l_col_6_mb_12 {
+    width: 50%;
+  }
+  .l_col_5_mb_12 {
+    width: 41.66666667%;
+  }
+  .l_col_4_mb_12 {
+    width: 33.33333333%;
+  }
+  .l_col_3_mb_12 {
+    width: 25%;
+  }
+  .l_col_2_mb_12 {
+    width: 16.66666667%;
+  }
+  .l_col_1_mb_12 {
+    width: 8.33333333%;
+  }
+}

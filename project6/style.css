@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0mm;
+  box-sizing: border-box;
+}
+
+.rd-only {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+img {
+  display: block;
+}
+
+/* layout */
+
+.l_wrapper {
+  padding: 0 10px;
+}
+
+.l_main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* commons */
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Components */
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+}
+
+.search_anchor {
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+/* justify-contents : flex-start로 했을때 왜 serch_anchor가 오른쪽 끝으로 가지 못하는걸까? */
+
+.main-title {
+  color: white;
+  margin-left: 5px;
+}
+
+.video {
+  position: relative;
+  padding-top: 56.25%;
+  background-color: blue;
+}
+.video-iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+}
+
+.contents {
+  background-color: white;
+}
+
+.contents_anchor {
+  color: dodgerblue;
+  font-size: 0.7rem;
+}
+
+.contents_title {
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+.contents_inform {
+  margin-top: 5px;
+  display: flex;
+  font-size: 0.5rem;
+  color: #222;
+}
+
+.button_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.profile-inform {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  padding-left: 10px;
+}
+
+.profile-enter {
+  margin-left: auto;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-box {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.box {
+  position: relative;
+  width: 100px;
+  height: 70px;
+  background-color: blue;
+  flex: 0 1 30%;
+}
+
+.box_title {
+  flex: 0 1 70%;
+  padding-left: 10px;
+  font-size: 0.5rem;
+}
+.box_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* media quaries */
+
+@media screen and (min-width: 460px) {
+  .l_main {
+    flex-direction: row;
+  }
+}

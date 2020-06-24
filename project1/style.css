@@ -1,0 +1,107 @@
+* {
+  box-sizing: content-box;
+  margin: 0;
+}
+
+body {
+  background-image: url(img/bg.png);
+  color: white;
+}
+
+.rd-only {
+  display: none;
+}
+
+.upperbg {
+  position: relative;
+  background-image: url(img/cover.png);
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* 사진의 위치를 어떻게 조정해야할지 모르곘다. */
+
+.upperlogo {
+  position: absolute;
+  /* position : absolute가 되었기 때문에 이상있는 block으로 형성된다.
+    width를 주지 않으면 글자의 크기만큼 차지한다. */
+  left: 50%;
+  /* left 50%가 아닌 40%를 했는데 왜 가운데에 위치하지.?? */
+  top: 50%;
+  /* font-size: 45px;
+    color: white;
+    border-top: 7px solid white;
+    border-bottom: 7px solid white; */
+}
+
+.box {
+  position: relative;
+  max-width: 600px;
+  margin: 10px auto;
+  background-color: inherit;
+}
+.box::before {
+  position: absolute;
+  content: " ";
+  width: 4px;
+  height: 100%;
+  background-color: dodgerblue;
+  left: 49.5%;
+  top: 20px;
+}
+
+.boxitem {
+  position: relative;
+  width: 50%;
+  margin: 0 -15px;
+  height: 300px;
+  background-color: black;
+}
+.boxitem::before {
+  width: 15px;
+  height: 15px;
+  background-image: url(/assets/images/practice/tour/cover.png);
+  border: 2px solid dodgerblue;
+  position: absolute;
+  content: " ";
+
+  border-radius: 50%;
+}
+
+.boxitem img {
+  width: 100%;
+}
+
+.boxitem:nth-child(even) {
+  margin-top: -50px;
+  margin-left: auto;
+}
+.boxitem:nth-child(3n) {
+  margin-top: -50px;
+}
+
+.schedule {
+  margin: 10px;
+}
+.schedule h1 {
+  font-size: 25px;
+}
+
+.schedule p {
+  font-size: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .boxitem:nth-child(even) {
+    margin-top: 0px;
+    margin-left: 0;
+    margin: 0 -15px;
+  }
+  .boxitem:nth-child(3n) {
+    margin-top: 0px;
+  }
+
+  .schedule {
+    margin: 15px 30px;
+  }
+}

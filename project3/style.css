@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+}
+
+li,
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+button {
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-image: url(/assets/images/practice/grid/bg.png);
+  max-width: 1280px;
+  margin: 0 auto;
+  color: white;
+}
+
+/* -----layout----- */
+
+.l_row {
+  margin-left: -10px;
+  margin-top: 20px;
+}
+
+.l_col {
+  float: left;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* float를 사용하면서 단점이 여기서 느껴지네.
+  why? 나는 한줄에 5개를 맞추기 위해 20%를 줬다. 하지만 서로의 간격이 필요해 margin을 주었는데 그러나 두줄이 되버리는 현상이 생긴다. flex를 사용했다면 no-wrapper 이걸 사용하면 알아서 해주던데.. 
+  결론 : 내가 생각한 갯수를 한줄에 맞추기가 생각보다 어렵다는거
+  그래서 flex와 grid를 사용하는거구나.. */
+
+/* components */
+
+.item {
+  background-color: #111;
+}
+
+.item img {
+  width: 100%;
+  display: block;
+}
+
+.contents {
+  margin: 15px;
+}
+
+.contents .contents-title {
+  font-weight: 900;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.contents .content {
+  color: gray;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+
+.contents .buy_button {
+  background-color: orangered;
+  width: 60%;
+  height: 30px;
+  color: white;
+  font-weight: 400;
+}
+
+.contents .view_button {
+  background-color: #333;
+  width: 36%;
+  height: 30px;
+  display: inline-block;
+  color: white;
+  font-weight: 400;
+}
+
+.l_nav {
+  padding: 0px 10px 0px 0px;
+}
+
+.logo {
+  float: left;
+  width: 20%;
+}
+
+.menu {
+  float: left;
+  width: 80%;
+}
+
+.menu .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+/* -----common----- */
+
+.rd-only {
+  display: none;
+}
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.clearfix::after {
+  display: table;
+  content: " ";
+}
+
+/* utility */
+
+.wd_50 > li {
+  width: 50%;
+}
+.wd_33 > li {
+  width: 33.33333%;
+}
+.wd_25 > li {
+  width: 25%;
+}
+.wd_20 > li {
+  width: 20%;
+}
+
+@media screen and (max-width: 990px) {
+  .l_row > li {
+    width: 50%;
+  }
+}

@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(/assets/images/practice/lecture/bg.png);
+  color: gray;
+}
+.rd-only {
+  display: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.lecture {
+  float: left;
+  width: 900px;
+}
+
+.lecture .intro {
+  width: auto;
+  background-image: url(/assets/images/practice/lecture/cover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 25px 25px;
+}
+
+.intro .intro_title {
+  width: 700px;
+  float: left;
+}
+
+.intro .intro_title h1 {
+  color: white;
+  font-size: 37px;
+}
+
+.intro .intro_img {
+  float: left;
+  width: 100px;
+  margin-left: 50px;
+  color: white;
+}
+
+.intro .intro_img img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.intro .intro_title strong {
+  font-size: 18px;
+}
+
+.intro img {
+  display: block;
+}
+
+.intro::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.wrapper::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.curriculum {
+  margin-top: 15px;
+}
+.curriculum h1 {
+  padding: 15px 0px 15px 15px;
+  color: white;
+}
+
+.curriculum section {
+  padding: 15px 0px 15px 15px;
+}
+
+.wrapper .curriculum {
+  background-color: black;
+}
+
+.curriculum ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.curriculum .box {
+  background-color: #3c3d3c;
+  border-radius: 5px;
+  height: 140px;
+  margin-top: 15px;
+}
+
+.box h2 {
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.curriculum .innerbox {
+  position: relative;
+  background-color: black;
+  margin: 15px 15px;
+  height: 85px;
+  border-radius: 5px;
+}
+
+.curriculum .innerbox table {
+  margin-left: 10px;
+}
+
+.innerbox table a {
+  text-decoration: none;
+  color: gray;
+}
+.innerbox table a:hover {
+  text-decoration: underline;
+}
+
+.innerbox table td:last-child {
+  position: absolute;
+  right: 15px;
+}
+
+.wrapper .payment {
+  width: 300px;
+  height: 939px;
+  float: left;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.wrapper video {
+  width: 300px;
+  height: 250px;
+}
+
+.wrapper .payment .cost {
+  text-align: center;
+  margin: 30px;
+}
+
+.payment .cost strong:first-child {
+  font-size: 40px;
+  color: orangered;
+}
+
+.payment .information {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.payment button {
+  margin: 0 auto;
+  display: block;
+  width: 220px;
+  height: 35px;
+  margin-top: 10px;
+  border: 0;
+  font-weight: 900;
+  color: white;
+}
+
+.payment button:nth-child(odd) {
+  background-color: orangered;
+}
+.payment button:nth-child(even) {
+  background-color: gray;
+}
+
+.payment .detail {
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.payment .detail ul {
+  padding: 0;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+/* @media screen and (max-width: 1300px) {
+    .wrapper .payment {
+      width: 900px;
+      height: 939px;
+      float: left;
+      background-color: black;
+      margin: 0 auto;
+    }
+    .wrapper video {
+      width: 900px;
+      height: 400px;
+    }
+  } */

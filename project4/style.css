@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* 화면 전체를 잡을때는 이방법을 쓰려나? */
+
+/* layout */
+
+.l_wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.l_img {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  float: left;
+}
+.l_contents {
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+
+.l_row {
+  width: 100%;
+}
+
+.l_col {
+  width: 33.33333%;
+  float: left;
+}
+.l_grid {
+  padding-top: 20px;
+}
+
+.l_col_12_12 {
+  width: 100%;
+}
+.l_col_11_12 {
+  width: 91.66666667%;
+}
+.l_col_10_12 {
+  width: 83.33333333%;
+}
+.l_col_9_12 {
+  width: 75%;
+}
+.l_col_8_12 {
+  width: 66.66666667%;
+}
+.l_col_7_12 {
+  width: 58.33333333%;
+}
+.l_col_6_12 {
+  width: 50%;
+}
+.l_col_5_12 {
+  width: 41.66666667%;
+}
+.l_col_4_12 {
+  width: 33.33333333%;
+}
+.l_col_3_12 {
+  width: 25%;
+}
+.l_col_2_12 {
+  width: 16.66666667%;
+}
+.l_col_1_12 {
+  width: 8.33333333%;
+}
+
+/* components */
+
+.background_img {
+  width: 100%;
+  height: 100%;
+}
+
+.background_title {
+  position: absolute;
+  top: 50%;
+  padding: 10px 20px;
+  background-color: black;
+  color: orangered;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.l_col img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.contents {
+  background-color: black;
+  height: 100%;
+  padding: 20px;
+}
+
+/* float를 활용하여 grid를 만들어보려 헀으나 다양한 모양의 Grid를 만드는데 어려움이 있다. */
+
+/* img태그를 쓰지 않고 div테그만을 사용하여 background를 적용한 방법도 나중에 써보자 */
+
+/* commons */
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* 화면을 줄이니 텍스트가 늘어나 이미지가 빠져나가는 현상이 발생 */
+/* float를 이용한 다양한 grid 실패 */
