@@ -1,0 +1,72 @@
+@import "_reset";
+@import "_variables";
+@import "_root";
+
+header {
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  width: $layoutWidth;
+  flex-direction: column;
+  justify-content: space-around;
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    h3,
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+main {
+  margin-left: $layoutWidth;
+
+  .item {
+    padding: 70px 70px;
+
+    &:nth-child(odd) {
+      background-color: $oddColor;
+    }
+    &:nth-child(even) {
+      background-color: $evenColor;
+    }
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      span {
+        text-align: right;
+      }
+    }
+  }
+
+  .video {
+    position: relative;
+    padding-top: 56.25%;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+}

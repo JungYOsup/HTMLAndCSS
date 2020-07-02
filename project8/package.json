@@ -1,0 +1,21 @@
+{
+  "name": "project8",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "bulid": "gulp build"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.4",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
