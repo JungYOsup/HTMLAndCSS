@@ -1,0 +1,181 @@
+@import "_reset";
+@import "_root";
+@import "_variables";
+
+section {
+  margin: 50px 100px;
+}
+
+#navbar {
+  font-size: 12px;
+  font-weight: 400;
+  ul {
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    li {
+      width: 150px;
+      &:nth-child(4) {
+        text-align: right;
+      }
+      &:nth-child(5) {
+        text-align: right;
+      }
+
+      i {
+        &::after {
+          padding-left: 10px;
+          content: "0";
+        }
+      }
+    }
+    .navbar__logo {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+
+  //   padding을 쓰고서 이미지를 넣는방법을 알고싶다.
+
+  .home__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .home__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 600px;
+
+    h4 {
+      color: white;
+    }
+    h1 {
+      color: white;
+    }
+    a {
+      color: white;
+      border: 1px solid white;
+    }
+  }
+}
+
+#studios {
+  display: flex;
+  flex-direction: row;
+
+  .studios__leftbox {
+    flex: 1 0 50%;
+    .leftbox__background {
+      width: 100%;
+    }
+  }
+
+  .studios__rightbox {
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6ddd6;
+    width: 100px;
+
+    h2 {
+      width: 400px;
+      text-align: center;
+
+      margin-bottom: 50px;
+    }
+    a {
+      border: 1px solid black;
+      padding: 20px 80px;
+    }
+  }
+}
+
+#shop {
+  color: black;
+  text-align: center;
+
+  .shop__items {
+    display: flex;
+    flex-direction: row;
+
+    .item {
+      flex: 1 0 33.333%;
+      text-align: center;
+
+      .item__img {
+        display: inline-block;
+        width: 100%;
+      }
+
+      a {
+        margin-top: 32px;
+      }
+    }
+  }
+}
+
+#gift {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .gift__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .gift__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 600px;
+  }
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+  background-color: #f3ede8;
+
+  img {
+    width: 100%;
+  }
+  .grid__inform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  a {
+    margin-top: 30px;
+  }
+}

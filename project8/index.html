@@ -3,70 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/5bc4dd40ca.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Paint Box Coding</title>
   </head>
   <body>
+    <!-- 어떻게 하면 정 가 -->
     <nav id="navbar">
       <ul>
         <li>NAIL STUDIOS</li>
         <li>SHOP POLISH</li>
-        <li><img src="" alt="" /></li>
+        <li><img src="dist/img/logo.png" alt="" class="navbar__logo" /></li>
         <li>JOURNAL</li>
-        <li><img src="" alt="" /></li>
+        <li><i class="fas fa-shopping-bag"></i></li>
       </ul>
     </nav>
 
+    <!-- home -->
     <section id="home">
-      <h4>SUMMER 2020</h4>
-      <h1>Meet Our newest Power Couple-tonal purples are launching now.</h1>
-      <button>Shop now</button>
-    </section>
-    <section id="studios">
-      <div>
-        <!-- img -->
+      <img
+        src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/005_c91d6895-4db1-4430-be43-95df40980c26_1600x929_crop_center.jpeg?v=1592966359"
+        alt="img"
+        class="home__background"
+      />
+      <div class="home__title">
+        <h4>SUMMER 2020</h4>
+        <h1>Meet Our newest Power Couple-tonal purples are launching now.</h1>
+        <a href="">Shop now</a>
       </div>
-      <div>
+    </section>
+
+    <!-- studio -->
+    <section id="studios">
+      <div class="studios__leftbox">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/PAINTBOX-UES_0030_93651217-57d7-4f10-8891-86c2dbf637bb_800x800_crop_center.jpeg?v=1592966195"
+          alt="img"
+          class="leftbox__background"
+        />
+      </div>
+      <div class="studios__rightbox">
         <h4>OUR STUDIOS</h4>
         <h2>
           Opening july 6th: book our soho flagship studio or our new Uptown
           studio
         </h2>
-        <button>
-          <div>BOOK A MANICURE</div>
-          <div>-></div>
-        </button>
+        <a href="">Book A manicure</a>
       </div>
     </section>
+    <!-- shop -->
     <section id="shop">
       <h4>the shop</h4>
       <h2>Our Newest Poilish Colors</h2>
-      <div>
-        <div>
-          <img src="" alt="" />
-
+      <div class="shop__items">
+        <div class="item">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0086/4865/4895/products/summer_600x800_crop_center.png?v=1593044775"
+            alt=""
+            class="item__img"
+          />
           <h4>POWER COUPLE</h4>
           <h2>Like Lilac + Like Muse</h2>
           <h4>$40.00</h4>
-          <button>ADD to CART</button>
+          <a>ADD to CART</a>
+        </div>
+        <div class="item">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0086/4865/4895/products/SS20POWERCOUPLE_600x800_crop_center.png?v=1585835776"
+            alt=""
+            class="item__img"
+          />
+          <h4>POWER COUPLE</h4>
+          <h2>Like Lilac + Like Muse</h2>
+          <h4>$40.00</h4>
+          <a>ADD to CART</a>
+        </div>
+        <div class="item">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0086/4865/4895/products/FW19.DuoBottlesFINAL_600x800_crop_center.jpg?v=1568152548"
+            alt=""
+            class="item__img"
+          />
+          <h4>POWER COUPLE</h4>
+          <h2>Like Lilac + Like Muse</h2>
+          <h4>$40.00</h4>
+          <a>ADD to CART</a>
         </div>
       </div>
     </section>
+    <!-- gift -->
     <section id="gift">
-      <h4>GIFT CARD</h4>
-      <h1>
-        Give the gift of the Paintbox Expereince for a manicure that tells a
-        story.
-      </h1>
-      <button>
-        GET GIFTING
-      </button>
+      <img
+        src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/IMG_3566_65a3b457-7a2f-474d-81c1-56eec598fcdd_1280x743_crop_center.jpg?v=1561045055"
+        alt="shopimg"
+        class="gift__background"
+      />
+      <div class="gift__title">
+        <h4>GIFT CARD</h4>
+        <h1>
+          Give the gift of the Paintbox Expereince for a manicure that tells a
+          story.
+        </h1>
+
+        <a>
+          GET GIFTING
+        </a>
+      </div>
     </section>
-    <section id="newest">
-      <h4>NEWEST POWER COUPLE</h4>
-      <h1>Summer 2020 Power Couple: Like Lilac + Like Muse</h1>
-      <img src="" alt="" />
-      <button></button>
+    <section id="grid">
+      <div>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0086/4865/4895/articles/200106_paintbox_0292_1080x723_crop_center.jpeg?v=1593715586"
+          alt=""
+        />
+      </div>
+      <div class="grid__inform">
+        <h4>Jul 2,2020</h4>
+        <h2>Nail Insperation:TOP Three Summer Trends</h2>
+        <a href="#">read story</a>
+      </div>
+      <div class="grid__inform">
+        <h4>Jul 2,2020</h4>
+        <h2>Nail Insperation:TOP Three Summer Trends</h2>
+        <a href="#">read story</a>
+      </div>
+      <div>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0086/4865/4895/articles/200106_paintbox_2247_1080x723_crop_center.jpeg?v=1593713859"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0086/4865/4895/articles/009_1080x723_crop_center.jpeg?v=1593013781"
+          alt=""
+        />
+      </div>
+      <div class="grid__inform">
+        <h4>Jul 2,2020</h4>
+        <h2>Nail Insperation:TOP Three Summer Trends</h2>
+        <a href="#">read story</a>
+      </div>
     </section>
-    <section id="grid"></section>
   </body>
 </html>
